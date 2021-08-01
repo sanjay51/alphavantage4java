@@ -35,8 +35,8 @@ Result:
       "fiscalDateEnding": "2021-03-31",
       "reportedEPS": "1.77"
     },
-    ...
 ```
+...
 
 ## Example 2 - Time Series Intraday Data
 ```java
@@ -72,8 +72,8 @@ Result:
       "2. high": "141.2900",
       "4. close": "141.2200"
     },
-    ...
 ```
+...
 
 The API returns a json object which you can use and transform as needed.
 
