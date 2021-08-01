@@ -1,5 +1,5 @@
 # alphavantage4java
-Alphavantage API generic Java wrapper. Easy to use and extend.
+Alpha Vantage API generic Java wrapper. Easy to use and extend.
 
 You should first obtain a key from Alphavantage API - https://www.alphavantage.co/support/#api-key
 
