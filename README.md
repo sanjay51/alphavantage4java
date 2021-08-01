@@ -1,9 +1,14 @@
 # alphavantage4java
-Alpha Vantage API generic Java wrapper. Easy to use and extend.
+Alpha Vantage API generic Java wrapper for fetching financial data, tickers, earnings, indicators, fundamentals etc. Easy to use and extend.
 
-You should first obtain a key from Alphavantage API - https://www.alphavantage.co/support/#api-key
+```
+Note: This repo is actively maintained. Feel free to create issues / request features. 
+Also, please ⭐ it if you appreciate the effort. Thank you.
+```
+## First step
+You should first obtain a key from Alphavantage API website - https://www.alphavantage.co/support/#api-key
 
-## Example - Fetch Earnings
+## Usage Example - Fetching Earnings
 ```java
 import com.sckill.alphavantage4java.AlphavantageAPI;
 // ...
