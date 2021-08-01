@@ -76,3 +76,35 @@ Result:
 ```
 
 The API returns a json object which you can use and transform as needed.
+
+## Installation
+Please see https://jitpack.io/#sanjay51/alphavantage4java/v1.0.2
+
+Latest release: [![](https://jitpack.io/v/sanjay51/alphavantage4java.svg)](https://jitpack.io/#sanjay51/alphavantage4java)
+
+### Maven:
+	<repositories>
+		<repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+  ..
+
+	<dependency>
+	    <groupId>com.github.sanjay51</groupId>
+	    <artifactId>alphavantage4java</artifactId>
+	    <version>v1.0.2</version>
+	</dependency>
+### Gradle:
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+  ..
+
+	dependencies {
+	        implementation 'com.github.sanjay51:alphavantage4java:v1.0.2'
+	}
