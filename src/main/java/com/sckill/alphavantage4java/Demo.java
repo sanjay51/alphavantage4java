@@ -12,6 +12,7 @@ public class Demo {
                 "symbol", "IBM",
                 "interval", "5min"
         ));
+
         System.out.println(obj.toString());
     }
 }
