@@ -5,13 +5,16 @@ You should first obtain a key from Alphavantage API - https://www.alphavantage.c
 
 ## Example - Fetch Earnings
 ```java
-# Create API object
+import com.sckill.alphavantage4java.AlphavantageAPI;
+// ...
+
+// Create API object
 AlphavantageAPI api = new AlphavantageAPI("0VYAF36W7SUE75W8"); // replace with your own key
 
-# Invoke
+// Invoke
 JSONObject obj = api.fetch("EARNINGS", Map.of("symbol", "IBM"));
 
-# Use
+// Use
 System.out.println(obj.toString());
 ```
 
@@ -40,17 +43,20 @@ Result:
 
 ## Example 2 - Time Series Intraday Data
 ```java
-# Create API object
+import com.sckill.alphavantage4java.AlphavantageAPI;
+// ...
+
+// Create API object
 AlphavantageAPI api = new AlphavantageAPI("0VYAF36W7SUE75W8"); // replace with your own key
 
-# Invoke
+// Invoke
 JSONObject obj = api.fetch("TIME_SERIES_INTRADAY", 
                             Map.of(
                                  "symbol", "IBM",
                                  "interval", "5min"
                             ));
 
-# Use
+// Use
 System.out.println(obj.toString());
 ```
 
