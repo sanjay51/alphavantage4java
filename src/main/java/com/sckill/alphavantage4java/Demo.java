@@ -5,8 +5,6 @@ import java.util.Map;
 import org.json.JSONObject;
 
 public class Demo {
-    public Demo() {
-    }
 
     public static void main(String[] args) throws IOException {
         AlphavantageAPI api = new AlphavantageAPI("0VYAF36W7SUE75W8");

@@ -23,25 +23,27 @@ public class AlphavantageAPI {
     }
 
     private URL buildUrl(String function, Map<String, String> parameters) {
-        URIBuilder b = null;
+        URIBuilder urlBuilder = null;
 
         try {
-            b = new URIBuilder(this.BASE_URL);
-            b.addParameter("apikey", this.apiKey);
-            b.addParameter("function", function);
-            Iterator var4 = parameters.keySet().iterator();
+            urlBuilder = new URIBuilder(this.BASE_URL);
+            urlBuilder.addParameter("apikey", this.apiKey);
+            urlBuilder.addParameter("function", function);
 
-            while(var4.hasNext()) {
-                String param = (String)var4.next();
-                b.addParameter(param, (String)parameters.get(param));
+            Iterator params = parameters.keySet().iterator();
+
+            while(params.hasNext()) {
+                String param = (String) params.next();
+                urlBuilder.addParameter(param, parameters.get(param));
             }
+
         } catch (URISyntaxException var7) {
         }
 
         URL url = null;
 
         try {
-            url = b.build().toURL();
+            url = urlBuilder.build().toURL();
         } catch (Exception var6) {
             System.out.println(var6);
         }
